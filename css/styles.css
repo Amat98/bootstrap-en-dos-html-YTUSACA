@@ -1,0 +1,405 @@
+/*RESET*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Teko', sans-serif;
+    list-style: none;
+}
+
+/*FONDOS*/
+body{
+    display: grid;
+}
+.body-index{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/fondo1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    
+
+}
+
+.body-art {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/fondo2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+.body-can {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/fondo3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.body-nosotros{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/fondo4.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.body-contacto{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/fondo5.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header nav ul ul{
+    
+    display: none;
+}
+/*MENU HAMBURGUESA*/
+
+.logo-uno{
+    width: 280px;
+    margin-left: 10px;
+    margin-top: 5px;
+    
+}
+
+.logo-dos{
+    display: none;
+}
+
+.victor{
+    display: none;
+}
+
+nav{
+    background-color: black;
+    height: 110px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.bar-btn{
+    color: rgb(249, 45, 45);
+    font-size: 50px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.nav-menu{
+    position: fixed;
+    width: 100%;
+    height: 0vh;
+    top: 110px;
+    background-color: rgba(0, 0, 0, .90);
+    text-align: center;
+    transition: all .5s;
+    z-index: 1;
+}
+
+.nav-menu li{
+    display: none;
+    line-height: 30px;
+    margin: 50px 0;
+    transition: all .5s;
+}
+
+.nav-menu li a{
+    color: white;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.nav-menu li a.active, .nav-menu li a:hover{
+    color: rgb(255, 40, 40);
+    transition: .5s;
+}
+
+#check{
+    display: none;
+}
+
+#check:checked ~ .nav-menu{
+    height: 100vh;
+}
+
+#check:checked ~ .nav-menu li{
+    display: block;
+}
+
+/*bootstra*/
+
+.carousel-inner {
+    width: 250px;
+    margin: auto;
+}
+
+.galeria{
+    width: 350px;
+    margin: auto;
+}
+
+main{
+    color: white;
+}
+
+footer{
+    color: white;
+    
+}
+
+/*MAIN INDEX*/
+
+.main-index{
+    text-align: center;
+    font-size: 22px;
+    margin-top: 50px;
+    
+}
+.main-index h1{
+    color: white;
+    text-shadow: 4px 4px 4px black;
+    
+}
+.main-index h2{
+    color: white;
+    text-shadow: 4px 4px 4px rgb(121, 10, 10);
+}
+
+/*MAIN ARTISTAS*/
+
+.img-uno{
+    width: 350px;
+    margin-top: 20px;
+}
+
+.main-art{
+    color: rgb(252, 58, 58);
+    font-size: 40px;
+    text-align: center;
+}
+
+.sub-titulo-uno{
+    color: white;
+    font-size: 30px;
+    margin-left: 7px;
+    margin-right: 7px;
+}
+
+.sub-titulo-dos{
+    color: white;
+    font-size: 30px;
+    margin-left: 7px;
+    margin-right: 7px;
+}
+
+.cuadro-uno{
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 30px;
+}
+
+.img-dos{
+    width: 350px;
+    margin-top: 0px;
+}
+
+
+.cuadro-dos{
+    background-color: rgba(0, 0, 0, .60);
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 30px;
+}
+
+
+
+
+/*FOOTER*/
+footer{
+    text-align: center;
+    background-color: black;
+    color: white;
+    margin-top: auto;
+    font-size: 25px;
+}
+
+
+
+
+/*RESPONSIVE*/
+
+@media screen and (min-width: 768px){
+
+    .logo-uno{
+        display: none;
+    }
+    .logo-dos{
+        display: block;
+        width: 650px;
+    }
+    .victor{
+        display: block;
+        width: 450px;
+        margin: auto;
+        border-radius: 20px;
+    }
+
+    .galeria{
+        width: 500px;
+        margin: auto;
+    }
+
+
+}
+
+@media screen and (min-width:1200px){
+
+    .galeria{
+        width: 700px;
+        margin: auto;
+        margin-top: 100px;
+    }
+
+
+    .logo-dos{
+        width: 600px;
+        margin-left: 10px;
+    }
+
+
+
+    nav{
+        height: 100px;
+    }
+    .bar-btn{
+        display: none;
+    }
+
+    .nav-menu{
+        position: relative;
+        height: 100px;
+        top: 0;
+        background: none;
+        transition: none;
+        text-align: right;
+        margin-right: 20px;
+        
+
+    }
+
+    .nav-menu li {
+        display: inline-block;
+        line-height: 100px;
+        margin: 0 10px;
+        transition: none;
+    }
+
+    .nav-menu li a{
+        font-size: 30px;
+    }
+
+    .nav-menu li a.active, .nav-menu li a:hover{
+        color: rgb(255, 255, 255);
+        transition: .8s;
+        background-color: rgb(255, 50, 50);
+        
+        
+         
+    }
+
+    /*MAIN*/
+
+    .main-index{
+        display: grid;
+        grid-template-areas: "victor titulo-inicio";
+        
+    
+    }
+
+    .titulo-inicio{
+        grid-area: titulo-inicio;
+        margin-right: 0px;
+        margin-left:0px;
+        text-align: left;
+
+    }
+
+    .victor{
+        grid-area: victor;
+        margin-top: 0px;
+        width: 550px;
+        margin-left:  auto;
+        margin-right: 0px;
+    }
+
+
+
+    /*MAIN-ART*/
+
+    
+
+    .cuadro-uno{
+        display: grid;
+        grid-template-areas:"img-uno titulo-uno";
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+    .titulo-uno{
+        grid-area: titulo-uno;
+        margin-top: 30px;
+    }
+
+    .sub-titulo-uno{
+        text-align: left;
+    }
+
+    .img-uno{
+        grid-area: img-uno;
+        margin-top: 0;
+    }
+
+
+    .cuadro-dos{
+        display: grid;
+        grid-template-areas: "titulo-dos img-dos";
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+    .img-dos{
+        grid-area: img-dos;
+    }
+    .titulo-dos{
+        grid-area: titulo-dos;
+        
+    }
+
+    .sub-titulo-dos{
+        text-align: left;
+    }
+
+    
+   
+
+}
